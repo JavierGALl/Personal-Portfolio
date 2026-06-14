@@ -1,20 +1,20 @@
 import { Hero } from "@/sections/Hero";
-import { About } from "@/sections/About";
-import { Projects } from "@/sections/Projects";
-import { Experience } from "@/sections/Experience";
-import { contact } from "@/sections/contact";
-// import { Navbar } from "@/layout/Navbar";
+import { sobre_mi } from "@/sections/Sobre_mi";
+import { proyectos } from "@/sections/Proyectos";
+import { experiencia } from "@/sections/Experiencia";
+import { contacto } from "@/sections/Contacto";
+import { Navbar } from "@/layout/Navbar";
 
 function App() {
   return (
     <div className="min-h-screen overflow-x-hidden">
-      {/* <Navbar /> */}
+      <Navbar />
       <main>
         <Hero />
-        <About />
-        <Projects />
-        <Experience />
-        <contact />
+        <sobre_mi />
+        <proyectos />
+        <experiencia />
+        <contacto />
       </main>
     </div>
   );
