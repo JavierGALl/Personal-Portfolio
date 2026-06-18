@@ -1,8 +1,8 @@
 import { Hero } from "@/sections/Hero";
-import { sobre_mi } from "@/sections/Sobre_mi";
-import { proyectos } from "@/sections/Proyectos";
-import { experiencia } from "@/sections/Experiencia";
-import { contacto } from "@/sections/Contacto";
+import { Sobre_mi } from "@/sections/Sobre_mi";
+import { Proyectos } from "@/sections/Proyectos";
+import { Experiencia } from "@/sections/Experiencia";
+import { Contacto } from "@/sections/Contacto";
 import { Navbar } from "@/layout/Navbar";
 
 function App() {
@@ -11,10 +11,10 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <sobre_mi />
-        <proyectos />
-        <experiencia />
-        <contacto />
+        <Sobre_mi />
+        <Proyectos />
+        <Experiencia />
+        <Contacto />
       </main>
     </div>
   );

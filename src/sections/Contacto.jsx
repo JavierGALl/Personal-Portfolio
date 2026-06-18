@@ -1,3 +1,3 @@
-export const contacto = () => {
+export const Contacto = () => {
   return <section></section>;
 };

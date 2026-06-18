@@ -3,16 +3,16 @@ import { Button } from "../components/Button";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "#sobre_mi", label: "Sobre mi" },
-  { href: "#proyectos", label: "Proyectos" },
+  { href: "#Sobre_mi", label: "Sobre mi" },
+  { href: "#Proyectos", label: "Proyectos" },
   { href: "#Experiencia", label: "Experiencia" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "#Contacto", label: "Contacto" },
 ];
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
-    <header className="fixed top-0 left-0 right-0 bg-transparent py-5">
+    <header className="fixed top-0 left-0 right-0 bg-transparent py-5 z-50">
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a
           href="#"

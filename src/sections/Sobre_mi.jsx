@@ -1,3 +1,3 @@
-export const sobre_mi = () => {
+export const Sobre_mi = () => {
   return <section></section>;
 };

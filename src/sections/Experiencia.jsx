@@ -1,3 +1,3 @@
-export const experiencia = () => {
+export const Experiencia = () => {
   return <section></section>;
 };
