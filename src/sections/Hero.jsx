@@ -3,6 +3,27 @@ import { ArrowRight, ChevronDown, Download } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
+const skills = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Node.js",
+  "GraphQL",
+  "PostgreSQL",
+  "MongoDB",
+  "Redis",
+  "Docker",
+  "AWS",
+  "Vercel",
+  "Tailwind CSS",
+  "Prisma",
+  "Jest",
+  "Cypress",
+  "Figma",
+  "Git",
+  "GitHub Actions",
+];
+
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -94,13 +115,63 @@ export const Hero = () => {
           {/* Rigth Column -profile image */}
           <div className="relative animate-fade-in animation-delay-300">
             {/* Profile Image */}
-            <div className="relative max-w-md mx-auto" >
+            <div className="relative max-w-md mx-auto">
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse" />
               <div className="relative glass rounded-3xl p-2 glow-border">
-                <img src="/profile-photo.png" alt="Javier Gallegos" className="w-full aspect=[4/5] object-cover rounded-2xl" />
+                <img
+                  src="/profile-photo.png"
+                  alt="Javier Gallegos"
+                  className="w-full aspect-[4/5] object-cover rounded-2xl"
+                />
+
+                {/* Floating Badge */}
+                <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
+                  <div className="flex items-center gap-3">
+                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+                    <span className="text-sm font-medium">
+                      Disponible para trabajar
+                    </span>
+                  </div>
+                </div>
+                {/*Stats Badge */}
+                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
+                  <div className="text-2xl font-bold text-primary">2+</div>
+                  <div className="text-sm text-muted-foreground">Años Exp.</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Skills section*/}
+        <div className="mt-20 animate-fade-in animation-delay-600">
+          <p className="text-sm text-muted-foreground mb-6 text-center">
+            Tecnologias con las que e trabajado
+          </p>
+          <div className="relative overflow-hidden">
+            <div className="flex animate-marquee">
+              {[...skills, , ...skills].map((skill, idx) => (
+                <div key={idx} className="flex-shrink-0 px-8 py-4">
+                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
+                    {skill}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 
+      animate-fade-in animation-delay-800"
+      >
+        <a
+          href="#about"
+          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
+        >
+          <span className="text-xs uppercase tracking-wider">Desliza</span>
+          <ChevronDown className="w-6 h-6 animate-bounce" />
+        </a>
       </div>
     </section>
   );
