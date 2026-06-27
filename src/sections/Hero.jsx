@@ -166,7 +166,7 @@ export const Hero = () => {
       animate-fade-in animation-delay-800"
       >
         <a
-          href="#about"
+          href="#Sobre_mi"
           className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
         >
           <span className="text-xs uppercase tracking-wider">Desliza</span>
